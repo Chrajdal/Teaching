@@ -4,8 +4,6 @@
 Toto je viceradkovy komentar
 */
 
-
-
 // Toto je jednoradkovy komentar
 
 // + - * / 
@@ -26,33 +24,35 @@ int main(void)
 	std::cout << "Zadejte operaci: (+ - * /)\n";
 	std::cin >> answer;
 
+	std::cout << "Zadejte dve cisla:\n";
+	std::cin >> x >> y;
 	if (answer == '+')
 	{
-		std::cout << "Zadejte dve cisla:\n";
-		std::cin >> x >> y;
 		std::cout << "Vysledek = " << x + y << '\n';
 	}
 	else if (answer == '-')
 	{
-		std::cout << "Zadejte dve cisla:\n";
-		std::cin >> x >> y;
 		std::cout << "Vysledek = " << x - y << '\n';
 	}
 	else if (answer == '*')
 	{
-		std::cout << "Zadejte dve cisla:\n";
-		std::cin >> x >> y;
 		std::cout << "Vysledek = " << x * y << '\n';
 	}
 	else if (answer == '/')
 	{
-		std::cout << "Zadejte dve cisla:\n";
-		std::cin >> x >> y;
-		std::cout << "Vysledek = " << x / y << '\n';
+		if (y == 0)
+		{
+
+			std::cout << "ERROR: Nelze delit nulou!\n";
+		}
+		else
+		{
+			std::cout << "Vysledek = " << x / y << '\n';
+		}
 	}
 	else
 	{
-		std::cout << "ERROR" << '\n';
+		std::cout << "ERROR: Zadejte platnou operaci\n";
 	}
 
 	
