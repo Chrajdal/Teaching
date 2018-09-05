@@ -1,6 +1,6 @@
 ﻿/*
 ---------------------------------------------------------------------------------------------
-									Dvě kružnice
+			Dvě kružnice
 ---------------------------------------------------------------------------------------------
 
 Úkolem je napsat program, který rozhodne vzájemnou polohu 2 kružnic.
@@ -68,9 +68,9 @@ int main(int argc, char * argv[])
 
 	...
 
-#ifndef __PROGTEST__
-		system("pause"); // toto progtest "nevidi"
-#endif // __PROGTEST__
+#ifndef __TEST__
+		system("pause"); // toto testovaci prostredi preskoci
+#endif // __TEST__
 	return 0;
 }
 */
@@ -128,8 +128,9 @@ Nespravny vstup.
 
 */
 
-int main(int argc, char ** argv)
+int main(int argc, char * argv[])
 {
-	
+	// TODO:
+
 	return 0;
 }
